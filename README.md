@@ -1,2 +1,2 @@
-diag
+diag java application
 ====
