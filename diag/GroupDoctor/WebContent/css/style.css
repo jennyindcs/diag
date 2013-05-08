@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+body {
+	background-color:#CCCCCC;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	margin:0 0;
+}
+h1, h2, h3 {
+	color:#000000;
+	margin:0;
+	font-weight: bold; 
+	font-family:Arial, Helvetica, sans-serif;
+	
+}
+h1 {
+	font-size:40px;
+	
+}
+h2 {
+	font-size:18px;
+}
+p, ul, ol {
+	margin-top:0;
+	line-height:140%;
+	text-align: inherit;
+}
+a {
+	color:#639CBF;
+	text-decoration:none;
+}
+.list1 li {
+	float:left;
+	line-height:normal;
+}
+.list1 li img {
+	margin:0 30px 30px 0;
+}
+.list1 li.alt img {
+	margin-right:0;
+}
+#ul {
+	list-style:none;
+	line-height:normal;
+	margin:0;
+	padding:0;
+}
+#li {
+	margin-bottom:0;
+	padding:0 0 10px;
+}
+#li ul {
+	margin:0;
+}
+#li {
+	background:url(images/bullet.jpg) no-repeat left 13px;
+	border-bottom:1px solid #E0E0E0;
+	margin:10px;
+	padding:10px 0;
+}
+#li a {
+	font-weight:400;
+	padding:0 0 0 20px;
+	text-decoration:none;
+}
+#li a:hover {
+	font-weight:420;
+	color:#666;
+	text-decoration:none;
+}
+
+
+.header {
+	width:1000px;
+	height:90px;
+	background:#ffffff;
+	font-size:12px;
+	text-align:left;
+	margin:0 auto;
+	padding:0 30px;
+	
+}
+
+#page {
+	width:1000px;
+	background:#FFFFFF;
+	margin:0 auto;
+	padding:30px;
+}
+#content {
+	float:right;
+	width:700px;
+	background:#FFF;
+	margin:0;
+	padding:10px;
+}
+
+
+#left {
+	float:left;
+	width:400px;
+	margin-left:2px;
+	padding: 0px 10px 10px 0px;
+	display:inline;
+}
+
+
+#right {
+	float:right;
+	width:200px;
+	padding: 0px 20px 20px 20px;
+	margin-top:10px;
+	border-left: #FFF 2px solid;
+
+}
+
+
+#sidebar {
+	float:left;
+	width:250px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	background:#FFF;
+}
+#sidebar ul {
+	list-style:none;
+	line-height:normal;
+	margin:0;
+	padding:0;
+}
+#sidebar li {
+	margin-bottom:0;
+	padding:0 0 10px;
+}
+#sidebar li ul {
+	margin:0;
+}
+#sidebar li li {
+	background:url(images/bullet.jpg) no-repeat left 13px;
+	border-bottom:1px solid #E0E0E0;
+	margin:10px;
+	padding:10px 0;
+}
+#sidebar li li a {
+	font-weight:400;
+	padding:0 0 0 20px;
+}
+#sidebar li li a:hover {
+	font-weight:420;
+	color: #666;
+}
+#sidebar p {
+	line-height:10%;
+	margin:0;
+	padding:0 14px;
+}
+#sidebar h2 {
+	height:30px;
+	font-size:18px;
+	font-weight:400;
+	color:#000000;
+	margin:0 0 10px;
+	padding:6px 0 2px;
+}
+#sidebar a {
+	text-align:left;
+	text-decoration:none;
+	color:#666;
+}
+
+#sidebar p a {
+	color:#0099CC;
+}
+	
+.footer {
+	width:1000px;
+	height:20px;
+	background:#fff;
+	margin:1px auto;
+	padding:10px;
+}
+#footer p {
+	text-align:left;
+	font-size:14px;
+	margin:20px;
+	border:0px;
+	padding:0px;
+}
+#footer a {
+	text-align:left;
+	text-decoration:none;
+	color:#666;
+}
+img {
+	border:0;
+	margin-top:.0em;
+}
+
+#filecheck{
+	border: thin ridge #B1D05E;
+	height:200px;
+}
+
+/*
+#upload {
+	background: url(images/button-bg.png) repeat-x top center;
+	border: 1px solid #999;
+	-moz-border-radius: 5px;
+	padding: 5px;
+	color: black;
+	font-weight: bold;
+	-webkit-border-radius: 5px;
+	font-size: 13px;
+	width: 90px;
+	height: 30px;
+}
+*/
+
+#courseID {
+	height: 25px;
+	width: 240px;
+	font-size:14px;
+	display:inline-block;
+	padding: 0 8px;
+	border: 1px solid #B1D05E;
+}
+
+#paraArea {
+	border: thin ridge #B1D05E;
+	float: left;
+	display: inline-block;
+	width: 500px;
+	margin-left: 1px;
+}
+
+#paraArea legend {
+	display: inline;
+	color:#6CC;
+	font-weight:600;
+}
+
+#paraArea  p{
+	margin: 1em 1em;
+}
+
+#paraArea label {
+	display: inline;
+	color:#F93;
+	font-weight:550;
+}
+
+#paraArea input {
+	width: 50px;
+	height: 15px;
+	border: 1px solid #ddd;
+	background:#E2E2E2;
+	padding: 3px;
+}
+
+#paraArea i {
+	font-size: 13px;
+}
+
+#login {
+	height: 560px;
+}
+
+#logout{
+	float:left;
+	margin-left:15px;
+	font-size:13px;
+}
+
+.rowName{
+	text-align:center;
+	font-size:15px;
+	font-weight:bold;
+	margin-top:20px;
+}
+
+.pie {
+	float:left;
+	width:230px;
+	margin-left:2px;
+	padding: 0px 10px 10px 0px;
+	display:inline;
+}
+
+.tableresult{
+	float:right;
+	width:340px;
+	margin-right:80px;
+	padding: 0px;
+	border:1px solid #9EDA62;
+}
+
+#GroupTable{
+	width:340px;
+	height:344px;
+}
+
+#StudentTable{
+	width:340px;
+	height:610px;
+}
+
+.cell{
+	border-bottom:1px solid #9EDA62;
+	border-right:1px solid #9EDA62;
+	font-size:12px;
+	font-weight:lighter;
+	text-align:left;
+	color:#808080;
+	padding-left:3px;
+}
+
+.chartfoot{
+	font-size:12px;
+	font-weight:lighter;
+	text-align:center;
+}

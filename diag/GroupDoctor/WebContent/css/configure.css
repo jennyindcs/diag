@@ -1,0 +1,241 @@
+/* 
+*	
+*	CSSG Collections: Forms
+*	designed and coded by Alen Grakalic (http://cssglobe.com)
+*	brought to you by Templatica (http://templatica.com)
+*
+*/
+body {
+	font: 13px Trebuchet MS, Arial, Helvetica, Sans-Serif;
+	color: #333;
+	line-height: 160%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: url(../images/configure-background.jpg) top center no-repeat
+		#c4c4c4;
+}
+
+h1 {
+	font-size: 200%;
+	font-weight: normal;
+}
+
+h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	margin: 1em 0 0 1em;
+}
+
+h2 {
+	font-size: 160%;
+}
+
+h3 {
+	font-size: 140%;
+}
+
+h4 {
+	font-size: 120%;
+}
+
+a {
+	text-decoration: none;
+	color: #f30;
+}
+
+a:hover {
+	color: #999;
+}
+
+table,input,textarea,select,li {
+	font: 100% Trebuchet MS, Arial, Helvetica, Sans-Serif;
+	line-height: 120%;
+	color: #333;
+}
+
+p,blockquote,ul,ol,form {
+	margin: 0.3em 0;
+}
+
+blockquote {
+	
+}
+
+img {
+	border: none;
+}
+
+hr {
+	display: none;
+}
+
+table {
+	margin: 1em 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th,td {
+	padding: 2px 5px;
+}
+
+th {
+	text-align: left;
+}
+
+li {
+	display: list-item;
+}
+
+#container {
+	margin: 0 auto; 	
+	width: 748px;
+	padding: 20px 40px;
+	text-align: left;
+}
+
+/* form 1 */
+#form1 {
+	margin: 1.2em 0;
+	padding-top: 10px;
+}
+
+#uploadarea {
+	float: left; 
+	width: 30%; /* since this element is floated, a width must be given */
+	/*background: #EBEBEB;*/ /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0 5px; /* top and bottom padding create visual space within this div  */
+}
+
+#filecheck{
+	border: thin ridge #BCBCBC;
+	height:200px;
+}
+/*
+#form1 fieldset2 {
+	position:absolute;
+	top:181px;
+	right:5;
+	margin: 0;
+	padding: 0;
+	border: solid;
+	float: left;
+	display: inline;
+	width: 300px;
+	margin-left: 45px;
+	left: 192px;
+	height: 25px;
+}
+*/
+
+#parameterarea { 
+	float:right;
+	width: 68%; /* since this element is floated, a width must be given */
+	/*background: #EBEBEB;*/
+} 
+
+#parameterarea fieldset1 {
+	margin: 0;
+	padding: 0;
+	border: none;
+	float: left;
+	display: inline;
+	width: 100px;
+	margin-left: 25px;
+}
+
+#parameterarea fieldset1 p{
+	margin: 1em -1em;
+}
+
+#parameterarea fieldset {
+	margin: 0;
+	padding: 0;
+	border: thin ridge #BCBCBC;
+	float: left;
+	display: inline;
+	width: 335px;
+	margin-left: 20px;
+}
+
+#parameterarea fieldset p{
+	margin: 1em 1em;
+}
+
+#parameterarea fieldset label {
+	display: inline;
+	color:#740F9F;
+}
+
+#parameterarea fieldset input {
+	width: 30px;
+	height: 15px;
+	border: 1px solid #ddd;
+	background: #D8D8D8;
+	padding: 3px;
+}
+
+#uploadform {
+	position:absolute;
+	top:580px;
+	//left:430px;
+}
+
+#submitID {
+	background: url(../images/button-bg.png) repeat-x top center;
+	border: 1px solid #999;
+	-moz-border-radius: 5px;
+	padding: 5px;
+	color: black;
+	font-weight: bold;
+	-webkit-border-radius: 5px;
+	font-size: 13px;
+	width: 90px;
+}
+	
+#form1 legend {
+	display: inline;
+	color:#4A68B5;
+}
+
+#form1 p {
+	margin: 1em 0;
+}
+
+#form1 input,#form1 textarea {
+	width: 30px;
+	border: 1px solid #ddd; //
+	background: #fff url(../images/form1/form_input.gif) repeat-x;
+	padding: 3px;
+}
+/*
+#form1 textarea {
+	height: 125px;
+	overflow: auto;
+}
+*/
+#form1 p.submit {
+	clear: both; //
+	background: url(../images/form1/form_bottom.gif) no-repeat 0 100%;
+	padding: 0 25px 20px 25px;
+	margin: 0;
+	text-align: right;
+}
+
+#form1 button {
+	background: url(../images/button-bg.png) repeat-x top center;
+	border: 1px solid #999;
+	-moz-border-radius: 5px;
+	padding: 5px;
+	color: black;
+	font-weight: bold;
+	-webkit-border-radius: 5px;
+	font-size: 13px;
+	width: 90px;
+}
+
+#form1 button:hover {
+	background: white;
+	color: black;
+}	
+/*  form 1 */

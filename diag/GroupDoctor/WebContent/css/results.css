@@ -1,0 +1,229 @@
+/* 
+*	
+*	CSSG Collections: Forms
+*	designed and coded by Alen Grakalic (http://cssglobe.com)
+*	brought to you by Templatica (http://templatica.com)
+*
+*/
+
+body{ 
+	
+	font:13px Trebuchet MS, Arial, Helvetica, Sans-Serif;
+	color:#333;
+	line-height:160%;
+	margin:0;
+	padding:0;
+	text-align:center;
+	background: url(../images/results-background.jpg) top center no-repeat #c4c4c4;
+	}
+
+h1{
+	font-size:200%;
+	font-weight:normal;
+	}		
+h2, h3, h4, h5, h6{
+	font-weight:normal;
+	margin:2em 0 0 1em;
+	}	
+h2{            
+	font-size:160%;
+	}	
+h3{          
+	font-size:140%;
+	}
+h4{          
+	font-size:120%;
+	}				
+
+a{
+	text-decoration:none;
+	color:#f30;
+	}
+a:hover{
+	color:#999;
+	}			
+input, textarea, select, li{
+	font:100% Trebuchet MS, Arial, Helvetica, Sans-Serif;
+	line-height:160%;
+	color:#333;
+	}				
+p, blockquote, ul, ol, form{
+	margin:1em 0;
+	}
+blockquote{
+	}
+img{
+	border:none;
+	}			
+hr{
+	display:none;
+	}	
+
+
+
+table {
+width:200px;
+border-top:1px solid #e5eff8;
+border-right:1px solid #e5eff8;
+margin:auto;
+border-collapse:collapse;
+
+}
+td {
+color:#678197;
+border-bottom:1px solid #e5eff8;
+border-left:1px solid #e5eff8;
+padding:.3em 1em;
+text-align:center;
+}
+th {
+
+color:#678197;
+border-bottom:1px solid #e5eff8;
+border-left:1px solid #e5eff8;
+padding:.6em .3em .6em .3em;
+text-align:center;
+font:bold 0.9em/0.9em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+}
+
+
+tr.odd .column1 {
+background:#f4f9fe;
+}
+tr .column1 {
+background:#f9fcfe;
+}
+
+thead th {
+background:#f4f9fe;
+text-align:center;
+font:bold 0.9em/0.9em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+color:#66a3d3;
+}
+	
+	
+	
+#container{	
+	margin:0 auto;
+	//background:#fff;
+	width:740px;
+	padding:20px 40px;
+	text-align:left;
+	//border-style:dashed;
+	//border-width:2px;
+	}		
+
+
+/* form 1 */
+
+	#form1{
+		margin:0.2em 0;
+		padding-top:10px;
+		}
+	#form1 fieldset{
+		margin:0;
+		padding:0;
+		border:none;	
+		float:left;
+		display:inline;
+		width:740px;
+		height:280px;
+		margin-bottom:0em;
+		//border-style:dashed;
+		//border-width:2px;	
+	
+		}	
+		
+		#form1 fieldset0{
+		margin:0;
+		padding:0;
+		border:none;	
+		float:left;
+		display:inline;
+		width:740px;
+		height:310px;
+
+		//border-style:dashed;
+		//border-width:2px;
+		//background-color:green;
+		}
+		
+		#form1 fieldset3{
+		margin:0;
+		padding:0;
+		border:none;	
+		float:left;
+		display:inline;
+		width:740px;
+		height:310px;
+		
+		//border-style:dashed;
+		//border-width:2px;
+		//background-color:lightGray;
+		}
+		
+		
+	#form1 fieldset1-1{
+		margin:0;
+		padding:0;
+		//border-style:dashed;
+		//border-width:2px;	
+		float:left;
+		display:inline;
+		width:240px;
+		height:280px;
+		//background-color:yellow;
+		margin-right:20px;
+		
+	}	
+	#form1 fieldset1-2{
+		margin:0;
+		padding:0;
+		//border-style:dashed;
+		//border-width:2px;	
+		float:left;
+		display:inline;
+		width:480px;
+		height:230px;
+		//background-color:yellow;
+		margin-left:0px;
+		
+	}
+	
+	#form1 fieldset11-1{
+		margin:0;
+		padding:0;
+		//border-style:dashed;
+		//border-width:2px;	
+		float:left;
+		display:inline;
+		width:320px;
+		margin-left:0px;
+		height:310px;
+	}
+	
+	#form1 fieldset11-2{
+		margin:0;
+		padding:0;
+		//border-style:dashed;
+		//border-width:2px;	
+		float:left;
+		display:inline;
+		width:380px;
+		margin-left:40px;
+		height:310px;
+	}
+	
+	
+	
+	
+	
+	#form1 legend{display:none;}	
+	#form1 p{margin:1em 0;}	
+	#form1 label{display:block;}	
+						
+					
+
+/* // form 1 */
+
+

@@ -1,0 +1,9 @@
+INDEX VERSION 1.126
+D:\eclipse-jee-indigo-win32\eclipse\WebService4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\268553148.index
+\GroupDoctor\src
+D:\eclipse-jee-indigo-win32\eclipse\Diag_1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\268553148.index
+\GroupDoctor\src
+D:\eclipse-jee-indigo-win32\eclipse\Diag_Version 20130507\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\268553148.index
+\GroupDoctor\src
+D:\eclipse-jee-indigo-win32\eclipse\Diag_1_fully functional version\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\268553148.index
+\GroupDoctor\src

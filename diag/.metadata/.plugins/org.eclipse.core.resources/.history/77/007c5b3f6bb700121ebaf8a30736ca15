@@ -1,0 +1,223 @@
+package controller;
+
+import java.io.File;
+import java.util.Vector;
+
+import results.TeacherViewProcessor;
+import analysis.ProblemAnalyzer;
+import collector.CsvReader;
+import data.Course;
+import data.CourseResult;
+import data.FinalResult;
+import data.Group;
+import data.GroupResult;
+import data.ProblemPieChart;
+import data.Student;
+import data.StudentResult;
+
+public class MainController {
+	
+	public static FinalResult diagnose(String courseId, double p1, double p2, int p3, double p4, double p5, File groupFile, File studentFile) {
+
+		FinalResult result = new FinalResult();
+
+
+		CsvReader csv = new CsvReader();
+
+		String cid = courseId;
+
+		Vector<Group> vecG = new Vector<Group>();
+
+		Vector<Student> vecS = new Vector<Student>();
+
+		Course course = new Course();
+
+		ProblemAnalyzer par = new ProblemAnalyzer();
+
+		CourseResult cr = new CourseResult();
+
+		TeacherViewProcessor tvp = new TeacherViewProcessor();
+
+		Vector<GroupResult> vecGR = new Vector<GroupResult>();
+
+		Vector<StudentResult> vecSR = new Vector<StudentResult>();
+
+		ProblemPieChart chart1 = new ProblemPieChart();
+
+		ProblemPieChart chart2 = new ProblemPieChart();
+
+		ProblemPieChart chart3 = new ProblemPieChart();
+
+		ProblemPieChart chart4 = new ProblemPieChart();
+
+		ProblemPieChart chart5 = new ProblemPieChart();
+
+
+		vecG = csv.getGroups(cid, groupFile);
+
+		//System.out.println(vecG.get(0).getID()+"-> of: "+vecG.get(0).getoverallFeedback());
+
+		//System.out.println(vecG.size());
+
+		vecS = csv.getStudents(cid, groupFile, studentFile);
+
+		//System.out.println(vecS.size());
+
+		course.setcourseID(cid);
+
+		course.setParameter1(p1);
+
+		course.setParameter2(p2);
+
+		course.setParameter3(p3);
+
+		course.setParameter4(p4);
+
+		course.setParameter5(p5);
+
+		course.setavgGroupFeedback(csv.calculateAvgGroupFeedback(vecG));
+
+		//System.out.println(course.getavgGroupFeedback());
+
+		course.setavgGroupPosts(csv.calculateAvgGroupPosts(vecG));
+
+		//System.out.println(course.getavgGroupPosts());
+
+
+		cr = par.diagnoseCourse(course, vecG, vecS);
+
+
+		vecGR = tvp.getGroupTable(cr);
+
+		vecSR = tvp.getStudentTable(cr);
+
+		chart1 = tvp.getGroupProblemPieChart("1", cr);
+
+		//System.out.println(chart1.getPercentageYes());
+
+		chart2 = tvp.getGroupProblemPieChart("2", cr);
+
+		chart3 = tvp.getStudentProblemPieChart("3", cr);
+
+		chart4 = tvp.getStudentProblemPieChart("4", cr);
+
+		chart5 = tvp.getStudentProblemPieChart("5", cr);
+
+
+		//print the results
+
+
+		System.out.println("GroupTable\n");
+
+		System.out.println("======================="+"\n");
+
+		GroupResult gr = new GroupResult();
+
+		for(int i=0;i<vecGR.size();i++){
+
+		gr = vecGR.get(i);
+
+		System.out.println(gr.getGroupID()+"\t"+gr.getResultCP5()+"\t"+gr.getResultCP6()+"\n");
+
+		}
+
+		System.out.println("======================="+"\n");
+
+
+		System.out.println("StudentTable\n");
+
+		System.out.println("======================="+"\n");
+
+		StudentResult sr = new StudentResult();
+
+		for(int i=0;i<vecSR.size();i++){
+
+		sr = vecSR.get(i);
+
+		System.out.println(sr.getStudentID()+"\t"+sr.getResultCP1()+"\t"+sr.getResultCP2()+"\t"
+
+		+sr.getResultCP3()+"\t"+sr.getGroupID()+"\n");
+
+		}
+
+		System.out.println("======================="+"\n");
+
+
+		System.out.println("Problem 5 Pie Chart Info\n");
+
+		System.out.println("-----------------------"+"\n");
+
+		System.out.println(chart1.getProblemID()+"\t"+"Yes: "+chart1.getPercentageYes()+"\t"
+
+		+"Maybe: "+chart1.getPercentageMaybe()+"\t"+"No: "+chart1.getPercentageNo()+"\n");
+
+		System.out.println("-----------------------"+"\n");
+
+
+		System.out.println("Problem 6 Pie Chart Info\n");
+
+		System.out.println("-----------------------"+"\n");
+
+		System.out.println(chart2.getProblemID()+"\t"+"Yes: "+chart2.getPercentageYes()+"\t"
+
+		+"Maybe: "+chart2.getPercentageMaybe()+"\t"+"No: "+chart2.getPercentageNo()+"\n");
+
+		System.out.println("-----------------------"+"\n");
+
+
+		System.out.println("Problem 1 Pie Chart Info\n");
+
+		System.out.println("-----------------------"+"\n");
+
+		System.out.println(chart3.getProblemID()+"\t"+"Yes: "+chart3.getPercentageYes()+"\t"
+
+		+"Maybe: "+chart3.getPercentageMaybe()+"\t"+"No: "+chart3.getPercentageNo()+"\n");
+
+		System.out.println("-----------------------"+"\n");
+
+
+		System.out.println("Problem 2 Pie Chart Info\n");
+
+		System.out.println("-----------------------"+"\n");
+
+		System.out.println(chart4.getProblemID()+"\t"+"Yes: "+chart4.getPercentageYes()+"\t"
+
+		+"Maybe: "+chart4.getPercentageMaybe()+"\t"+"No: "+chart4.getPercentageNo()+"\n");
+
+		System.out.println("-----------------------"+"\n");
+
+
+		System.out.println("Problem 3 Pie Chart Info\n");
+
+		System.out.println("-----------------------"+"\n");
+
+		System.out.println(chart5.getProblemID()+"\t"+"Yes: "+chart5.getPercentageYes()+"\t"
+
+		+"Maybe: "+chart5.getPercentageMaybe()+"\t"+"No: "+chart5.getPercentageNo()+"\n");
+
+		System.out.println("-----------------------"+"\n");
+
+
+		result.vecGR = vecGR;
+		//System.out.println(result.vecGR.get(0).getGroupID());
+
+		result.vecSR = vecSR;
+
+
+		result.chart1 = chart1;
+
+		result.chart2 = chart2;
+
+		result.chart3 = chart3;
+
+		result.chart4 = chart4;
+
+		result.chart5 = chart5;
+
+
+
+		return result;
+
+		}
+	
+}
