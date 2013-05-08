@@ -74,22 +74,18 @@ public class HandleFileUpload extends HttpServlet {
 		System.out.println(path);
 		out.write("æœ�åŠ¡å™¨æœ¬åœ°è·¯å¾„:" + path + "<br/>\n");
 		for (Part p : request.getParts()) {
-			// ***** æ‰“å�°è°ƒè¯•ä¿¡æ�¯ *****{
 			String info = "name=" + p.getName() + ", content="
 					+ p.getContentType() + ", size=" + p.getSize();
-			System.out.println(info);
 			out.write(info);
-			// ***** æ‰“å�°è°ƒè¯•ä¿¡æ�¯ *****}
 			if ((0 == p.getSize()) || (null == p.getContentType())) {
 				continue;
 			}
 			//write every part of request into the file system
 			ApplicationPart ap = (ApplicationPart) p;
-			String fname1 = ap.getFilename();// å�–å¾—ä¸Šä¼ çš„æ–‡ä»¶å��å¦‚C:\Users\Public\Pictures\Sample
-												// Pictures\Desert.jpg
+			String fname1 = ap.getFilename();
 			int path_idx = fname1.lastIndexOf("\\") + 1;
-			String fname2 = fname1.substring(path_idx, fname1.length());// æ��å�–æ–‡ä»¶å��Desert.jpg
-			p.write(path + fname2); // å†™å…¥ web é¡¹ç›®æ ¹è·¯å¾„ä¸‹
+			String fname2 = fname1.substring(path_idx, fname1.length());
+			p.write(path + fname2);
 			System.out.println(fname2);
 			System.out.println(p.getContentType());
 		}
