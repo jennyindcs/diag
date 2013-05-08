@@ -5,7 +5,7 @@
 
 Analysing student engagement and collaboration in online group work is always a challenging task for teachers or faciliators who are committed to moderate online collabrative learning. Imagine a hundrad students are using a collaborative learning forum to carry out a group learning task. Every time when a teacher want to analyse the student engagement in the group work, he or she may examine the log file of the forum system and manually decide the collaboration problems of indiviudal students and groups, e.g who is not contributing much in online discussions and in which group a single student is dominating the group, based on his or her teaching experience. This is very time-consuming and difficult, especially when the teacher wants to repeatedly perform the analysing task.
 
-This Java web system will solve the problem.
+This Java web system will help solve the problem.
 
 Here is an example scenario to illustrate what functionalities that the 
 diag system provides. Jack is the teacher who organizes the group work that is examined. At one day after the group work began, Jack wishes to
