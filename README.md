@@ -37,11 +37,11 @@ It is a pure Elipse dynamic web project.
 
 You need to copy the diag folder into the installation directory of eclipse on your computer. Then you need to import the diag project in Eclipse. 
 
-Following that, you need to new a server (e.g. Tomcat v 7.0 Server) in Eclipse and add the diag project to the Server. Please check check server.xml contains only one context of /GroupDoctor, e.g.,
+Following that, you need to new a Server (e.g. Tomcat v 7.0 Server) in Eclipse and add the diag project to the Server. Please check server.xml contains only one context of /GroupDoctor, e.g.,
 
     <Context docBase="GroupDoctor" path="/GroupDoctor" reloadable="true" source="org.eclipse.jst.jee.server:GroupDoctor"/>
 
 
-To run the system, start the MySQL service, start the Tomcat server and go to http://127.0.0.1:8080/GroupDoctor/ to access the web system.
+To run the system, start the MySQL service and the Tomcat server, and then go to http://127.0.0.1:8080/GroupDoctor/ to access the web system.
 
 ====
