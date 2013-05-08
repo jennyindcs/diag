@@ -17,8 +17,8 @@ assess the collaboration problems for the students and groups who are participat
 
 Diag uses a MySQL database to store user credential information. You need to install a MySQL server in your computer first. After it is installed, create a new database and two tables in the database.
 
-`database name: groupdoctor_users`	
-`table1: user_roles` 
+`database name: groupdoctor_users`  
+`table1: user_roles`  
 `table2: username_password`
 
 Then insert required data into the two tables.
